@@ -1,0 +1,27 @@
+Milestone one requirements
+    - 5 primitives: integer, float, boolean, string, cell address
+    - 7 arithmetic ops: add, subtract, mult, divide, modulo, exponent, negation
+    - 3 logical operations: and, or, not 
+    - cell lvalues: a pair of column and row expressions that yields an address primitive when evaluated.
+    - cell rvalues: a pair of column and row expressions that yields the value at its address when evaluated.
+    - 6 bitwise: and, or, xor, not , left shift, right shift
+    - 6 relational: equals, not equals, less than, less than or equal, greater than, greater than or equal
+    - 2 cast operations: float to int, int to float
+    - 4 stat func: max, min, mean, and sum
+
+Each abstraction should have: 
+    - a constructor receiving child nodes or other necessary state as parameters
+    - accessors for state, as needed
+    - a visit method, as described below
+    - no serialization or evaluation in these classes 
+
+
+
+Notes:
+
+should probably have an expression class that all models implement?
+need to implement cell_vals.rb and stat_funcs.rb
+test in main that we can add several expressions and serialize and evaluate them 
+
+What is the difference between cell left values and right cell values?
+Primitives in serializer can problably be done in a single method - Jerry.
